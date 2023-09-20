@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+  font-size: 14px;
+  color: $white;
+  fill: $white;
+  background: $dark;
+  font-family: 'Nunito Sans', sans-serif;
+  line-height: 1.33;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.2s ease-out 0s;
+}
+
+img {
+  max-width: 100%;;
+}
+
+.c-grey {
+  color: $grey-text;
+  fill: $grey-text;
+}
+
+.c-orange {
+  color: $orange;
+  fill: $orange;
+}
+
+.c-blue {
+  color: $blue;
+  fill: $blue;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  padding-left: 40px;
+  padding-right: 40px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &_stretch {
+    max-width: none;
+  }
+}
+
+main {
+  flex: auto;
+}
+
+header {
+  height: 60px;
+  background: $black;
+  border-bottom: 1px solid $grey;
+}
+
+footer {
+  background: $black;
+  border-top: 2px solid $grey;
+  font-size: 12px;
+  padding: 15px 0;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}

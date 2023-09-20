@@ -1,0 +1,18 @@
+@mixin card {
+    background: $grey;
+    border-radius: 6px;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+
+    &_dark {
+        background: $grey-dark;
+    }
+}
+
+@mixin nowrap {
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
